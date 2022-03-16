@@ -1,0 +1,10 @@
+.map__wrap {
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
+  height: 600px;
+
+  .mapboxgl-control-container {
+    display: none;
+  }
+}
