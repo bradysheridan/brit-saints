@@ -45,3 +45,13 @@ a:focus *,
 a:visited * {
   text-decoration: none
 }
+
+.no-list-style {
+  list-style: none;
+  ul,ol { list-style: none; }
+}
+
+p img {
+  width: 100%;
+  height: auto;
+}

@@ -1,21 +1,26 @@
+import React from 'react';
+import Markdown from 'react-markdown';
+
 import lorem from '../config/lorem';
 
 function About() {
   return(
-    <div className="about__wrap">
-      <h6>About the project</h6>
+    <div className="about__wrap no-list-style">
+      <Markdown>
+{`*Maps are not territory; they are spaces, spaces to be crossed and recrossed and experienced from every angle. The only to understand a map is to get down into it, to play at the edges, to jump into the center and back out again.” (Pinto 2016)*
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+*“What persists is what was recently defined as an ‘archaeology of the disappeared’: material traces or (immaterial traces...) that allow us to recreate a sacred space that defines the territories in which they are found.” (Aillet and Tuil Leonetti 2015; El Hour 2022)*
 
-      <p dir="rtl" lang="ar">
-        أي يكن إختار ليرتفع, بال وبعدما بتحدّي ألمانيا من. تصفح جزيرتي عدد من, يكن إذ وبعض الصين ارتكبها, التي ويعزى التقليدي عل هذه. قد جدول ونتج وبعدما دنو, زهاء ثمّة تعديل أي لمّ. عدم إذ الآخر الضروري. ان لان تنفّس إجلاء الأرضية, تلك أكثر استدعى المشترك ما.
-        <br />
-        <br />
-        هو فصل دارت كردة والإتحاد. أسر أم كثيرة بمباركة. ثم تعد قادة مواقعها الإقتصادية. قام لم الحكومة الإمتعاض, و التي إجلاء الى. مع وصل المارق المنتصر.
-        <br />
-        <br />
-        ثم يونيو بتحدّي لكل, سياسة واحدة قائمة أن الا. الا مرمى أخرى أي. السبب وبعدما ايطاليا، ما إيو, بال ٣٠ والفلبين بريطانيا-فرنسا. شدّت ليبين لفرنسا لم فقد.
-      </p>
+**This project was narrated on the authority of:**
+- Brittany Landorf [(Emory University, Graduate Division of Religion)](http://gdr.emory.edu/people/student-directory.html). When not mapping, she writes about [Sufism, gender, and sexuality in North Africa](https://brill.com/view/journals/jie/4/1-2/article-p128_7.xml?language=en), the figuring of madness, and the ethics of bewilderment.
+- Muḥammad ibn Ja‘far al-Kattānī (1857-1927), *Salwat al-anfās wa muḥādathat al-akyās mi-man uqbira min al-‘ulamā’ wa sulahā’ bi Fās* (1887)
+- Muḥammad al-Idrīsī (d. 1165), *Kitāb Nuzhat al-mushtāq fī ikhtirāq al-āfāq.* Oxford, Bodleian Library MS. Pococke 375: [https://digital.bodleian.ox.ac.uk/objects/ced0d8bd-1019-4af2-9086-e411115f1507/](https://digital.bodleian.ox.ac.uk/objects/ced0d8bd-1019-4af2-9086-e411115f1507/surfaces/09067ca1-6c3d-47af-af47-8ad4d3f5756b/)
+
+**Many thanks to:**
+- Meriem El Haitami, for whose friendship, insights, and love of the female saints of Fez, past and present, made this project possible.
+- Emory Center for Digital Scholarship & the HASTAC Digital Humanities Fellowship
+- Brady Sheridan, the scholar-coder. (@Brady Sheridan link your website!)`}
+      </Markdown>
     </div>
   )
 }

@@ -1,4 +1,11 @@
 .about__wrap {
-  flex: 0.25;
+  position: relative;
+  padding: 0 20px;
   overflow-y: scroll;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .about__wrap {
+    padding: 0;
+  }
 }

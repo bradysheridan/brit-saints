@@ -1,12 +1,12 @@
 const menus = {
   topNav: [
     {
-      path: "/",
-      displayName: "Home"
+      path: "/about",
+      displayName: "About"
     },
     {
-      path: "/typography",
-      displayName: "Typography"
+      path: "/bibliography",
+      displayName: "Bibliography"
     }
   ]
 };

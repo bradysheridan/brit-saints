@@ -1,6 +1,28 @@
-.header__wrap {
+.header-placeholder {
+  height: 6vh;
+  min-height: 38px;
+}
+.header-wrap__outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6vh;
+  min-height: 38px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid black;
+
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+
+  z-index: 9;
+}
+
+.header-wrap__inner {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

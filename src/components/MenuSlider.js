@@ -1,13 +1,19 @@
 import React from 'react';
 
-const MenuItem = ({ title, body, dest, onSelect }) => (
-  <a href={dest || "#"} target="_self">
-    <div className="menu-slider__item">
-      {title && <p>{title}</p>}
-      {title && <p>{body.substring(0, 40).trim().concat('...')}</p>}
-    </div>
-  </a>
-);
+const MenuItem = (props) => {
+  let { data, onSelect } = props;
+  let { name } = data;
+
+  console.log(props)
+
+  return(
+    <a href="#" onClick={onSelect}>
+      <div className="menu-slider__item">
+        {name && <p>{name}</p>}
+      </div>
+    </a>
+  );
+}
 
 class MenuSlider extends React.Component {
   constructor(props) {
@@ -41,21 +47,19 @@ class MenuSlider extends React.Component {
   }
 
   render() {
-    let { title, items, index } = this.state;
+    let { title, items } = this.props;
+    let { index } = this.state;
+
+    console.log(items)
 
     return(
       <div className="menu-slider__wrap">
-        <div className="menu-slider__controls">
-          {title && <h5 className="menu-slider__title">{title}</h5>}
-          <div className="menu-slider__arrows">
-            <button className="menu-slider__arrow-left" onClick={() => this.handleClick('left')}>{"<-"}</button>
-            <button className="menu-slider__arrow-right" onClick={() => this.handleClick('right')}>{"->"}</button>
-          </div>
-        </div>
-
-        <div className="menu-slider__items" style={{ marginLeft: index * -132 }}>
+        <div className="menu-slider__items">
           {items.map((item, i) => (
-            <MenuItem {...item} onSelect={() => this.props.onSelect(item)} />
+            <MenuItem
+              {...item}
+              onSelect={() => this.props.onSelect(item)}
+            />
           ))}
         </div>
       </div>

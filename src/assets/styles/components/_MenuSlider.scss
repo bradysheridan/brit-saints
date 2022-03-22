@@ -1,61 +1,64 @@
 .menu-slider__wrap {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  overflow-x: hidden;
-  position: relative;
-  width: 75vw;
-
-  .menu-slider__controls {
-    .menu-slider__arrows {
-      display: flex;
-      button {
-        padding: 0;
-        margin: 0;
-        width: 30px;
-        height: 30px;
-        border: 2px outset grey;
-        cursor: pointer;
-
-        &:hover {
-          border: 2px inset grey;
-        }
-        &:active {
-          background-color: #ddd;
-        }
-      }
-    }
-  }
-
-  .menu-slider__items {
-    display: flex;
-    width: 75vw;
-    overflow-x: hidden;
-    transition: margin-left 500ms;
-    position: absolute;
-    top: 80px;
-  }
-
-  .menu-slider__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 120px;
-    height: 180px;
-    border: 1px solid blue;
-    padding: 6px;
-
-    p {
-      text-align: left;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    &:hover {
-      background-color: #eee;
-    }
-  }
+  width: 100%;
 }
+
+// .menu-slider__wrap {
+//   display: flex;
+//   flex-direction: column;
+//   flex: 1;
+//   overflow-x: hidden;
+//   position: relative;
+//
+//   .menu-slider__controls {
+//     .menu-slider__arrows {
+//       display: flex;
+//       button {
+//         padding: 0;
+//         margin: 0;
+//         width: 30px;
+//         height: 30px;
+//         border: 2px outset grey;
+//         cursor: pointer;
+//
+//         &:hover {
+//           border: 2px inset grey;
+//         }
+//         &:active {
+//           background-color: #ddd;
+//         }
+//       }
+//     }
+//   }
+//
+//   .menu-slider__items {
+//     display: flex;
+//     width: 75vw;
+//     overflow-x: hidden;
+//     transition: margin-left 500ms;
+//     position: absolute;
+//     top: 80px;
+//   }
+//
+//   .menu-slider__item {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     width: 120px;
+//     height: 180px;
+//     border: 1px solid blue;
+//     padding: 6px;
+//
+//     p {
+//       text-align: left;
+//     }
+//
+//     img {
+//       width: 100%;
+//       height: auto;
+//     }
+//
+//     &:hover {
+//       background-color: #eee;
+//     }
+//   }
+// }
