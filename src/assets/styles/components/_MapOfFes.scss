@@ -35,8 +35,11 @@
 }
 
 .print-map {
-  width: 100%;
+  width: 96%;
   height: 100%;
+  margin: 0 0 0 14px;
   background: url("../images/print_map.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top bottom;
 }

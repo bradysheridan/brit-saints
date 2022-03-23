@@ -94,9 +94,7 @@ After some time, she traveled to the side of Shaykh Sidi Ahmad al-Barnisi in Lam
 
 She would occasionally occupy herself some nights while people slept, distinguishing herself from them through her performances of raka’at [bowing], prayers, invocations, and supplications. Her situation and miracles were well-known among the people. She was also among those whom the shaykh Sidi al-Tāwadī ibn Sawda al-Mirī met and bestowed baraka on.
 
-She died, may God have mercy upon her, in the beginning of the year 1199 hijrī. It is said in the book *Sulūk al-Ṭarīqa al-Ḥāliya* [The Wayfarers of the Path]: “She is buried by the al-Ja‘āydī cemetery, near Shaykh Sidi Abu Ghālib al-Ṣāraywī. She had a wonderful funeral.” Her tomb is now unknown.
-
-![IMG_9912.jpg](/assets/images/IMG_9912.jpg)`,
+She died, may God have mercy upon her, in the beginning of the year 1199 hijrī. It is said in the book *Sulūk al-Ṭarīqa al-Ḥāliya* [The Wayfarers of the Path]: “She is buried by the al-Ja‘āydī cemetery, near Shaykh Sidi Abu Ghālib al-Ṣāraywī. She had a wonderful funeral.” Her tomb is now unknown.`,
     data: {
       name: "al-Sayyīda Safīya Labbāda (2: 417)",
       previewText: `She died, may God have mercy upon her, in the beginning of the year 1199 hijrī. It is said in the book Sulūk al-Ṭarīqa al-Ḥāliya [The Wayfarers of the Path]: She is buried by al-Ja‘āydī cemetary, near Shaykh Sidi Abu Ghālib al-Ṣāraywī. She had a wonderful funeral.” Her tomb is now unknown.`,
@@ -104,9 +102,7 @@ She died, may God have mercy upon her, in the beginning of the year 1199 hijrī
     }
   },
   {
-    content: `Among them is Sayyīda Zahrā’ al-Sharīfa. She is mentioned in al-Tanbīh which states: “Sīdī ‘Abd ar-Raḥmān Ibn al-Qādī mentioned her. Her tomb is above the shrine above Sīdī Abī Ghālib.”
-
-![IMG_9840.jpg](/assets/images/IMG_9840.jpg)`,
+    content: `Among them is Sayyīda Zahrā’ al-Sharīfa. She is mentioned in al-Tanbīh which states: “Sīdī ‘Abd ar-Raḥmān Ibn al-Qādī mentioned her. Her tomb is above the shrine above Sīdī Abī Ghālib.”`,
     data: {
       name: "al-Sayyīda Zahrā’ al-Sharī̄fa (2:436)",
       previewText: `Among them is Sayyīda Zahrā’ al-Sharīfa. She is mentioned in al-Tanbīh which states: “Sīdī ‘Abd ar-Raḥmān Ibn al-Qādī mentioned her. Her tomb is near the shrine of Sīdī Abī Ghālib.”`,
@@ -122,9 +118,7 @@ The scholar, most learned and most meticulous           The successful link
 
 Aḥmad al-Wanshirsī, the great scholar,                           defender of the sharī‘a from fodder
 
-Near to him is Shaykh ‘Alī al-Kuskus                                His heart and soul rest in contentment
-
-![IMG_9840.jpg](/assets/images/IMG_9840.jpg)`,
+Near to him is Shaykh ‘Alī al-Kuskus                                His heart and soul rest in contentment`,
     data: {
       name: "Lālla Yaddūna (2: 582)",
       previewText: ``,

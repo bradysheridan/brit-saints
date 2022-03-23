@@ -11,7 +11,7 @@ ReactDOM.render(
     <Helmet>
         <meta charSet="utf-8" />
         <meta name="author" content="Brittany Landorf" />
-        <meta name="description" content="The MDN Web Docs Learning Area aims to provide complete beginners to the Web with all they need to know to get started with developing web sites and applications." />
+        <meta name="description" content="TODO" />
         <title>Visiting the Female Saints of Fez, Rawḍ al-Awliyā’</title>
     </Helmet>
 

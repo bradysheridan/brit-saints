@@ -5,8 +5,9 @@ import lorem from '../config/lorem';
 
 function About() {
   return(
-    <div className="about__wrap no-list-style">
-      <Markdown>
+    <div className="about__wrap">
+      <div className="about__wrap-inner no-list-style">
+        <Markdown>
 {`*Maps are not territory; they are spaces, spaces to be crossed and recrossed and experienced from every angle. The only to understand a map is to get down into it, to play at the edges, to jump into the center and back out again.” (Pinto 2016)*
 
 *“What persists is what was recently defined as an ‘archaeology of the disappeared’: material traces or (immaterial traces...) that allow us to recreate a sacred space that defines the territories in which they are found.” (Aillet and Tuil Leonetti 2015; El Hour 2022)*
@@ -20,7 +21,8 @@ function About() {
 - Meriem El Haitami, for whose friendship, insights, and love of the female saints of Fez, past and present, made this project possible.
 - Emory Center for Digital Scholarship & the HASTAC Digital Humanities Fellowship
 - Brady Sheridan, the scholar-coder. (@Brady Sheridan link your website!)`}
-      </Markdown>
+        </Markdown>
+      </div>
     </div>
   )
 }

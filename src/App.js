@@ -11,8 +11,6 @@ import Map from './components/Map';
 import IconArrowLeft from './components/icons/IconArrowLeft';
 import IconX from './components/icons/IconX';
 
-import Typography from './pages/Typography';
-
 import mapLayers from './content/mapLayers';
 import saints from './content/saints2';
 
@@ -69,68 +67,66 @@ class App extends React.Component {
         <Header />
 
         <div className="app-wrap__inner">
-          <div className="side-menu__wrap">
-
           <Routes>
             <Route path="/" element={(
               <React.Fragment>
-                <div className="saint-listing__wrap">
-                  { mapLayer.items.map((o, i) => this.renderSaint(o, {
-                    key: `saint-${i}`
-                  })) }
+                <div className="side-menu__wrap">
+                  <div className="saint-listing__wrap">
+                    {mapLayer.items.map((o, i) => this.renderSaint(o, { key: `saint-${i}` }))}
+                  </div>
+
+                  {this.state.selectedSaint && (
+                    <div className="saint-details__wrap">
+                      <div className="saint-details__controls" onClick={() => this.onSelectSaint(this.state.selectedSaint)}>
+                        <p>
+                          {"<-- Back to list"}
+                        </p>
+
+                        <IconX />
+                      </div>
+
+                      { this.renderSaint(this.state.selectedSaint, {
+                          selected: true,
+                          inactive: true
+                        })}
+                    </div>
+                  )}
                 </div>
 
-                { this.state.selectedSaint && (
-                  <div className="saint-details__wrap">
-                    <div className="saint-details__controls" onClick={() => this.onSelectSaint(this.state.selectedSaint)}>
-                      <p>
-                        {"<-- Back to list"}
-                      </p>
+                <div className="page-wrap">
+                  <div className="map-nav">
+                    <p>Select map layer:</p>
 
-                      <IconX />
+                    <div className="map-nav__buttons">
+                      {
+                        Object.keys(mapLayers).map((k, i) => (
+                          <button key={`layer-button-${i}`} onClick={() => this.onSelectMapLayer(k)}>
+                            {mapLayers[k].displayName}
+                          </button>
+                        ))
+                      }
                     </div>
+                  </div>
 
-                    { this.renderSaint(this.state.selectedSaint, {
-                        selected: true,
-                        inactive: true
-                      })}
-                  </div> )}
-              </React.Fragment>
-            )} />
-            <Route path="about" element={<About />} />
-            <Route path="typography" element={<Typography />} />
-          </Routes>
-          </div>
-
-            <div className="page-wrap">
-              <div className="map-nav">
-                <p>Select map layer:</p>
-
-                <div className="map-nav__buttons">
-                  {
-                    Object.keys(mapLayers).map((k, i) => (
-                      <button key={`layer-button-${i}`} onClick={() => this.onSelectMapLayer(k)}>
-                        {mapLayers[k].displayName}
-                      </button>
-                    ))
+                  {"mapbox" === mapLayer.type
+                    ? <Map
+                        title={"asdf"}
+                        ref={ref => this.Map = ref}
+                        items={mapLayer.items}
+                        initialViewState={mapLayer.initialViewState}
+                        selectedItem={this.state.selectedSaint}
+                        onClick={(item) => this.onSelectSaint(item)}
+                        initialViewState={mapLayer.initialViewState}
+                        // onMove={evt => console.log(evt)}
+                      />
+                    : <div className="print-map" />
                   }
                 </div>
-              </div>
+              </React.Fragment>
+            )} />
 
-              {"mapbox" === mapLayer.type
-                ? <Map
-                    title={"asdf"}
-                    ref={ref => this.Map = ref}
-                    items={mapLayer.items}
-                    initialViewState={mapLayer.initialViewState}
-                    selectedItem={this.state.selectedSaint}
-                    onClick={(item) => this.onSelectSaint(item)}
-                    initialViewState={mapLayer.initialViewState}
-                    // onMove={evt => console.log(evt)}
-                  />
-                : <div className="print-map" />
-              }
-            </div>
+            <Route path="about" element={<About />} />
+          </Routes>
         </div>
       </div>
     );

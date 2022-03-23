@@ -1,5 +1,6 @@
 import React from 'react';
 import Mapbox, { Marker } from 'react-map-gl';
+import ImageTomb from '../assets/images/tomb.png';
 
 class Map extends React.Component {
   constructor(props) {
@@ -42,7 +43,15 @@ class Map extends React.Component {
               longitude={item.data.coordinates[0]}
               latitude={item.data.coordinates[1]}
               onClick={() => this.props.onClick(item)}
-            />
+            >
+              <img
+                src={ImageTomb}
+                width={38}
+                height={"auto"}
+                style={this.props.selectedItem && this.props.selectedItem.data.name === item.data.name
+                  ? {border: '1px dashed black', padding: 4, borderRadius: '50%'}
+                  : {}} />
+            </Marker>
           ))}
         </Mapbox>
       </div>
