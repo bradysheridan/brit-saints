@@ -15,19 +15,24 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
+        required: false
       - label: "Title (Arabic) - If left blank this will default to English title"
         name: "title_arabic"
         widget: "string"
+        required: false
       - label: "Description"
         name: "description"
         widget: "markdown"
+        required: false
       - label: "Description (Arabic) - If left blank this will default to English description"
         name: "description_arabic"
         widget: "markdown"
+        required: false
       - label: "Location"
         name: "location"
         widget: "object"
         summary: 'Location'
+        required: false
         fields:
           - label: "Location status"
             name: "status"
