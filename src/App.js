@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Navigate, useLocation } from "react-router-dom";
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -13,6 +13,18 @@ import IconX from './components/icons/IconX';
 
 import mapLayers from './content-old/mapLayers';
 import saints from './content-old/saints2';
+
+export const RemoveTrailingSlash = ({...rest}) => {
+    const location = useLocation()
+
+    // If the last character of the url is '/'
+    if (location.pathname.match('/.*/$')) {
+        return <Navigate replace {...rest} to={{
+            pathname: location.pathname.replace(/\/+$/, ""),
+            search: location.search
+        }}/>
+    } else return null
+}
 
 class App extends React.Component {
   constructor(props) {
