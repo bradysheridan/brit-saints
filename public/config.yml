@@ -18,11 +18,23 @@ collections:
       - label: "Description"
         name: "description"
         widget: "markdown"
-      - label: "Location Status"
-        name: "locationStatus"
-        widget: "select"
-        options: ["known", "unknown"]
+
       - label: "Location"
         name: "location"
-        widget: "map"
-        type: "Point"
+        widget: "object"
+        summary: 'Location'
+        fields:
+          - label: "Location status"
+            name: "status"
+            widget: "select"
+            options: ["known", "unknown"]
+          - label: "Click on map"
+            name: "map_geojson"
+            widget: "map"
+            type: "Point"
+          - label: "Enter latitude manually (this will take priority over map widget)"
+            name: "manual_latitude"
+            widget: "string"
+          - label: "Enter longitude manually (this will take priority over map widget)"
+            name: "manual_longitude"
+            widget: "string"
