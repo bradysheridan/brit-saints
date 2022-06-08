@@ -12,5 +12,17 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
+      - label: "Location Status"
+        name: "locationStatus"
+        widget: "select"
+        options: ["known", "unknown"]
+      - label: "Location"
+        name: "location"
+        widget: "map"
+        type: "Point"
