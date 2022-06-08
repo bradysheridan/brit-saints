@@ -38,13 +38,17 @@ collections:
             name: "status"
             widget: "select"
             options: ["known", "unknown"]
+            required: false
           - label: "Click on map"
             name: "map_geojson"
             widget: "map"
             type: "Point"
+            required: false
           - label: "Enter latitude manually (this will take priority over map widget)"
             name: "manual_latitude"
             widget: "string"
+            required: false
           - label: "Enter longitude manually (this will take priority over map widget)"
             name: "manual_longitude"
             widget: "string"
+            required: false
