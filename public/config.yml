@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  repo: bradysheridan/brit-saints
+  branch: master
+
+media_folder: "public/assets/uploads"
+
+collections:
+  - name: "saint"
+    label: "Saint"
+    folder: "src/content/serve/saints"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}

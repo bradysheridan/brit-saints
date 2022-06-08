@@ -11,8 +11,8 @@ import Map from './components/Map';
 import IconArrowLeft from './components/icons/IconArrowLeft';
 import IconX from './components/icons/IconX';
 
-import mapLayers from './content/mapLayers';
-import saints from './content/saints2';
+import mapLayers from './content-old/mapLayers';
+import saints from './content-old/saints2';
 
 class App extends React.Component {
   constructor(props) {
