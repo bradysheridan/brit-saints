@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: bradysheridan/brit-saints
-  branch: master
+  branch: main
 
 media_folder: "public/assets/uploads"
 
