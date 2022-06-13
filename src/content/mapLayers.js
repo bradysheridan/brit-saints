@@ -15,7 +15,7 @@ export default {
       latitude: 34.0650,
       zoom: 14.84083
     },
-    items: saints.filter((o, i) => o.location.status === "al-rijāl")
+    items: saints.filter((o, i) => o.map_layer === "al-rijāl")
   },
   "known_burial_locations": {
     type: "mapbox",
@@ -25,7 +25,7 @@ export default {
       latitude: 34.0650,
       zoom: 14.84083
     },
-    items: saints.filter((o, i) => o.location.status === "al-waliyāt")
+    items: saints.filter((o, i) => o.map_layer === "al-waliyāt")
   },
   "unknown_burial_locations": {
     type: "image",
@@ -35,6 +35,6 @@ export default {
       latitude: 34.028,
       zoom: 11.93
     },
-    items: saints.filter((o, i) => o.location.status === "al-waliyāt ghayr ma’rūf")
+    items: saints.filter((o, i) => o.map_layer === "al-waliyāt ghayr ma’rūf")
   }
 };

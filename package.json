@@ -26,6 +26,7 @@
     "start": "react-scripts start",
     "build": "node src/prepare-data.js && react-scripts build",
     "test": "react-scripts test",
+    "serve": "react-scripts serve",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -33,7 +33,8 @@ class App extends React.Component {
 
     this.state = {
       selectedMapLayer: "known_burial_locations",
-      selectedSaint: null
+      selectedSaint: null,
+      lang: "en"
     }
   }
 
@@ -55,6 +56,12 @@ class App extends React.Component {
     }
   }
 
+  onSelectLang(lang) {
+    if (lang === 'ar') document.body.classList.add("ar");
+    else document.body.classList.remove("ar");
+    this.setState({ lang });
+  }
+
   renderSaint(o, addProps) {
     let props = {
       ...o,
@@ -66,6 +73,7 @@ class App extends React.Component {
     return(
       <Saint
         {...props}
+        lang={this.state.lang}
         isSelected={this.state.selectedSaint && this.state.selectedSaint.name === o.name}
         onSelect={() => this.onSelectSaint(o)}
       />
@@ -77,7 +85,10 @@ class App extends React.Component {
 
     return(
       <div className="app-wrap__outer">
-        <Header />
+        <Header
+          lang={this.state.lang}
+          onSelectLang={this.onSelectLang.bind(this)}
+        />
 
         <div className="app-wrap__inner">
           <Routes>

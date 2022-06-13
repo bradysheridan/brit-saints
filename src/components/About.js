@@ -5,7 +5,7 @@ import lorem from '../config/lorem';
 
 function About() {
   return(
-    <div className="about__wrap">
+    <div className="about__wrap rtl">
       <div className="about__wrap-inner no-list-style">
         <Markdown>
 {`*Maps are not territory; they are spaces, spaces to be crossed and recrossed and experienced from every angle. The only to understand a map is to get down into it, to play at the edges, to jump into the center and back out again.” (Pinto 2016)*
