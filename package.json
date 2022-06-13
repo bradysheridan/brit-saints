@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "fetch": "^1.1.0",
     "fs": "^0.0.1-security",
+    "glob": "^8.0.3",
     "gray-matter": "^4.0.3",
     "mapbox-gl": "^1.13.0",
     "netlify-cms-app": "^2.15.72",
@@ -23,7 +24,7 @@
   "scripts": {
     "dev": "sass --watch src/assets/styles/main.scss:src/assets/styles/main.css & react-scripts start",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node src/prepare-data.js && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -44,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }

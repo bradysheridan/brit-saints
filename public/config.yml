@@ -15,7 +15,7 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-        required: false
+        required: true
       - label: "Title (Arabic) - If left blank this will default to English title"
         name: "title_arabic"
         widget: "string"
@@ -23,7 +23,7 @@ collections:
       - label: "Description"
         name: "description"
         widget: "markdown"
-        required: false
+        required: true
       - label: "Description (Arabic) - If left blank this will default to English description"
         name: "description_arabic"
         widget: "markdown"
@@ -31,10 +31,15 @@ collections:
       - label: "Preview text"
         name: "preview_text"
         widget: "markdown"
-        required: false
+        required: true
       - label: "Preview text (Arabic) - If left blank this will default to English description"
         name: "preview_text_arabic"
         widget: "markdown"
+        required: false
+      - label: "Map layer"
+        name: "map_layer"
+        widget: "select"
+        options: ["al-rijāl", "al-waliyāt", "al-waliyāt ghayr ma’rūf"]
         required: false
       - label: "Location"
         name: "location"
@@ -42,11 +47,6 @@ collections:
         summary: 'Location'
         required: false
         fields:
-          - label: "Location status"
-            name: "status"
-            widget: "select"
-            options: ["known", "unknown"]
-            required: false
           - label: "Click on map"
             name: "map_geojson"
             widget: "map"

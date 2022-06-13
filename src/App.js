@@ -11,8 +11,9 @@ import Map from './components/Map';
 import IconArrowLeft from './components/icons/IconArrowLeft';
 import IconX from './components/icons/IconX';
 
-import mapLayers from './content-old/mapLayers';
-import saints from './content-old/saints2';
+import mapLayers from './content/mapLayers';
+
+console.log("mapLayers", mapLayers);
 
 export const RemoveTrailingSlash = ({...rest}) => {
     const location = useLocation()
@@ -50,7 +51,7 @@ class App extends React.Component {
       this.Map.reset();
     } else {
       this.setState({ selectedSaint });
-      this.Map.flyTo({ center: selectedSaint.data.coordinates });
+      this.Map.flyTo({ center: selectedSaint.location.coordinates });
     }
   }
 
@@ -58,14 +59,14 @@ class App extends React.Component {
     let props = {
       ...o,
       ...(addProps)?addProps:{},
-      isSelected: this.state.selectedSaint && this.state.selectedSaint.data.name === o.data.name,
+      isSelected: this.state.selectedSaint && this.state.selectedSaint.name === o.name,
       onSelect: () => this.onSelectSaint(o)
     }
 
     return(
       <Saint
         {...props}
-        isSelected={this.state.selectedSaint && this.state.selectedSaint.data.name === o.data.name}
+        isSelected={this.state.selectedSaint && this.state.selectedSaint.name === o.name}
         onSelect={() => this.onSelectSaint(o)}
       />
     )
@@ -84,7 +85,7 @@ class App extends React.Component {
               <React.Fragment>
                 <div className="side-menu__wrap">
                   <div className="saint-listing__wrap">
-                    {mapLayer.items.map((o, i) => this.renderSaint(o, { key: `saint-${i}` }))}
+                    {mapLayer.items.map((o, i) => this.renderSaint(o, { key: o.id }))}
                   </div>
 
                   {this.state.selectedSaint && (

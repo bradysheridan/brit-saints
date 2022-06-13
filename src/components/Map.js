@@ -40,15 +40,15 @@ class Map extends React.Component {
           {this.props.items.map((item, i) => (
             <Marker
               key={`marker-${i}`}
-              longitude={item.data.coordinates[0]}
-              latitude={item.data.coordinates[1]}
+              longitude={item.location.coordinates[0]}
+              latitude={item.location.coordinates[1]}
               onClick={() => this.props.onClick(item)}
             >
               <img
                 src={ImageTomb}
                 width={38}
                 height={"auto"}
-                style={this.props.selectedItem && this.props.selectedItem.data.name === item.data.name
+                style={this.props.selectedItem && this.props.selectedItem.id === item.id
                   ? {border: '1px dashed black', padding: 4, borderRadius: '50%'}
                   : {}} />
             </Marker>
