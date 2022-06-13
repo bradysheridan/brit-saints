@@ -28,6 +28,14 @@ collections:
         name: "description_arabic"
         widget: "markdown"
         required: false
+      - label: "Preview text"
+        name: "preview_text"
+        widget: "markdown"
+        required: false
+      - label: "Preview text (Arabic) - If left blank this will default to English description"
+        name: "preview_text_arabic"
+        widget: "markdown"
+        required: false
       - label: "Location"
         name: "location"
         widget: "object"
