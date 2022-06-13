@@ -1,5 +1,5 @@
 ---
-title: "#2 al-Sayyida Zaynab, daughter of Mūlāy Idrīs ibn ‘Alī Jawṭī (1: 17)"
+title: "al-Sayyida Zaynab, daughter of Mūlāy Idrīs ibn ‘Alī Jawṭī (1: 17)"
 title_arabic: (1:17) الذين يتجنبون وينأون عن تحمل الكدح والألم
 description: >-
   *Epithets:*
@@ -41,6 +41,7 @@ preview_text_arabic: لكن لا بد أن أوضح لك أن كل هذه الأ
   بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر
   عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب
   في الحب ونيل.
+map_layer: al-waliyāt
 location:
   manual_latitude: "-4.975733"
   manual_longitude: "-4.975733"
