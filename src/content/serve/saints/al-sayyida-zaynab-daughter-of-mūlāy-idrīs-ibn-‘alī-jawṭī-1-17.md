@@ -1,5 +1,6 @@
 ---
 title: "al-Sayyida Zaynab, daughter of Mūlāy Idrīs ibn ‘Alī Jawṭī (1: 17)"
+title_arabic: (1:17) الذين يتجنبون وينأون عن تحمل الكدح والألم
 description: >-
   *Epithets:*
 
@@ -20,6 +21,26 @@ description: >-
 
 
   People continue to seek blessings from her even today. However, they call her by the name of “Lalla Kanza,” as some among the ignorant common people and women who are not told history nor genealogy mistakenly believe that she is al-Sayyida Kanza, mother of our saint Idrīs of the Banī Fez. Yet, I learned from one of her honorable relatives who was more knowledgeable of her accounts and who tended her shrine [*ḍarīḥ*] that her name is Zaynab and that she is the daughter of Mūlāy Idrīs, son of Mūlāy ‘Alī, as we mentioned previously. I also learned that her husband was the favored sharīf, Mūlāy ‘Abd Allah, son of Mūlāy Āḥmad al-Ḥasanī al-Idrīsī al-Jawṭī, also from her lineage. The relative who tended her tomb also informed me of documents he had written containing some information about her and her husband’s affairs—only God knows best.
+description_arabic: >-
+  لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار  النشوة وتمجيد
+  الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية،
+  فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين
+  لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا
+  لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ
+  بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد
+  وأسي.
+
+
+  و سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو آخر أراد أن يتجنب الألم الذي ربما تنجم عنه بعض المتعة ؟ 
+
+  علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء الذين أخفقوا في واجباتهم نتيجة لضعف إرادتهم فيتساوي مع هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم .
+preview_text: This is the preview text
+preview_text_arabic: لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول
+  استنكار  النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة
+  وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن
+  بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر
+  عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب
+  في الحب ونيل.
 location:
   manual_latitude: "-4.975733"
   manual_longitude: "-4.975733"
