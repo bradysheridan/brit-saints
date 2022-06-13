@@ -18,6 +18,7 @@ description: >-
   Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Consectetur a erat nam at lectus urna duis convallis. Proin fermentum leo vel orci porta non. Facilisi nullam vehicula ipsum a arcu cursus. Orci sagittis eu volutpat odio facilisis. Egestas dui id ornare arcu odio ut sem nulla pharetra. Felis bibendum ut tristique et. Adipiscing elit duis tristique sollicitudin nibh. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra. Convallis a cras semper auctor. Arcu non sodales neque sodales ut. Duis at consectetur lorem donec. Massa vitae tortor condimentum lacinia quis. Scelerisque eu ultrices vitae auctor. Tellus cras adipiscing enim eu turpis egestas pretium. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Eget nunc scelerisque viverra mauris in aliquam. Proin fermentum leo vel orci porta non.
 preview_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua.
+map_layer: al-rijāl
 location:
   manual_latitude: "34.0668389"
   manual_longitude: "-4.9749356"
