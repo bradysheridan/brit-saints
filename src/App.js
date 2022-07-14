@@ -12,6 +12,7 @@ import IconArrowLeft from './components/icons/IconArrowLeft';
 import IconX from './components/icons/IconX';
 
 import mapLayers from './content/mapLayers';
+import pageContent from './content/serve/pages/index.json';
 
 console.log("mapLayers", mapLayers);
 
@@ -149,7 +150,12 @@ class App extends React.Component {
               </React.Fragment>
             )} />
 
-            <Route path="about" element={<About />} />
+            <Route path="about" element={(
+              <About
+                content={pageContent.About}
+                lang={this.state.lang}
+              />
+            )} />
           </Routes>
         </div>
       </div>

@@ -6,6 +6,24 @@ backend:
 media_folder: "public/assets/uploads"
 
 collections:
+  - name: "page"
+    label: "Page"
+    folder: "src/content/serve/pages"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "Text"
+        name: "text"
+        widget: "markdown"
+        required: true
+      - label: "Text (Arabic)"
+        name: "text_arabic"
+        widget: "markdown"
+        required: true
   - name: "saint"
     label: "Saint"
     folder: "src/content/serve/saints"
